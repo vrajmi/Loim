@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Loim"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Legyen Ön is milliomos!" Height="450" Width="800" ResizeMode="CanMinimize" SizeToContent="WidthAndHeight">
     <Grid>
-        
+        <Image HorizontalAlignment="Center" Height="434" VerticalAlignment="Center" Width="800" Source="/loim.jpg" Stretch="UniformToFill"/>
+        <Label Content="Ranglista" HorizontalAlignment="Left" Margin="41,104,0,0" VerticalAlignment="Top" Height="40" Width="138" FontFamily="Showcard Gothic" FontSize="24" Foreground="White"/>
+        <Label Content="Impresszum" HorizontalAlignment="Center" Margin="0,403,0,0" FontFamily="Showcard Gothic" FontSize="16" VerticalAlignment="Center" Foreground="White"/>
+        <Label Content="Version 0.1" HorizontalAlignment="Left" Margin="722,407,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Button Content="Új Játék" HorizontalAlignment="Left" Margin="665,137,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" Height="35" Width="91"/>
+        <Button Content="Súgó" HorizontalAlignment="Left" Margin="665,217,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" Height="36" Width="91"/>
+        <Button Content="Kilépés" HorizontalAlignment="Left" Margin="665,298,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" Height="36" Width="91"/>
+
     </Grid>
 </Window>
