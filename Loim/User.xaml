@@ -6,11 +6,25 @@
         xmlns:local="clr-namespace:Loim"
         mc:Ignorable="d"
         Title="User" Height="450" Width="450" ResizeMode="CanMinimize">
-    <Grid Background="#FF182B53">
-        <Label Content="Kérlek Add Meg A Játékos Nevedet:" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Showcard Gothic" FontSize="22" Width="416"/>
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF545454"/>
+                <GradientStop Color="#FF182B53" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="Kérlek Add Meg A Játékos Nevedet:" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Showcard Gothic" FontSize="22" Width="416">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
         <Image HorizontalAlignment="Center" Height="207" VerticalAlignment="Center" Width="306" Source="/tablet-frame.png"/>
-        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="273" Height="171" Background="Black" Foreground="White" BorderBrush="{x:Null}" FontFamily="Showcard Gothic" TextAlignment="Center"/>
-        <Button Content="Kezdés" HorizontalAlignment="Center" Margin="0,391,0,0" VerticalAlignment="Top" Height="33" Width="74" FontFamily="Showcard Gothic"/>
+        <TextBox x:Name="UserTextBox" HorizontalAlignment="Center" BorderThickness="0" TextWrapping="Wrap" VerticalAlignment="Center" Width="273" Height="171" Background="Black" Foreground="White" BorderBrush="{x:Null}" FontFamily="Showcard Gothic" TextAlignment="Center"/>
+        <Button x:Name="StartButton" Content="Kezdés" HorizontalAlignment="Center" Margin="0,369,0,0" VerticalAlignment="Top" Height="33" Width="74" FontFamily="Showcard Gothic" Click="StartButton_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
 
     </Grid>
 </Window>

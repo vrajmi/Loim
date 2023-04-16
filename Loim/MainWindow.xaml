@@ -24,7 +24,7 @@
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label Content="Version 0.2" HorizontalAlignment="Left" Margin="722,407,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="Version 0.3" HorizontalAlignment="Left" Margin="722,407,0,0" VerticalAlignment="Top" Foreground="White"/>
         <Button x:Name="StartButton" Content="Új Játék" HorizontalAlignment="Left" Margin="635,124,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" Height="43" Width="91" Click="StartButton_Click" Background="#FFDDDDDD">
             <Button.Effect>
                 <DropShadowEffect/>
