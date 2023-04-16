@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Loim"
         mc:Ignorable="d"
-        Title="Legyen Ön is milliomos!" Height="450" Width="800" ResizeMode="CanMinimize" SizeToContent="WidthAndHeight" Loaded="Window_Loaded">
+        Title="Legyen Ön is milliomos!" Height="450" Width="800" ResizeMode="CanMinimize" SizeToContent="WidthAndHeight" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" Icon="/loim-logo.png">
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -13,18 +13,18 @@
                 <GradientStop Color="#FF182B53" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Image HorizontalAlignment="Center" Height="340" VerticalAlignment="Top" Width="622" Source="/loim-logo.png" Margin="0,42,0,0" Stretch="UniformToFill"/>
-        <Label Content="Ranglista" HorizontalAlignment="Left" Margin="51,82,0,0" VerticalAlignment="Top" Height="40" Width="138" FontFamily="Showcard Gothic" FontSize="24" Foreground="White">
+        <Image HorizontalAlignment="Center" Height="381" VerticalAlignment="Top" Width="712" Source="/loim-logo.png" Margin="0,25,0,0" Stretch="UniformToFill"/>
+        <Label Content="Ranglista" Margin="51,82,611,0" VerticalAlignment="Top" Height="40" FontFamily="Showcard Gothic" FontSize="24" Foreground="White">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label x:Name="ImpressumLabel" Content="Impresszum" HorizontalAlignment="Center" Margin="0,403,0,0" FontFamily="Showcard Gothic" FontSize="16" VerticalAlignment="Center" Background="#00000000" Foreground="White" MouseLeftButtonDown="ImpressumLabel_MouseLeftButtonDown">
+        <Label x:Name="ImpressumLabel" Content="Impresszum" HorizontalAlignment="Center" Margin="0,403,0,1" FontFamily="Showcard Gothic" FontSize="16" Background="#00000000" Foreground="White" MouseLeftButtonDown="ImpressumLabel_MouseLeftButtonDown">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label Content="Version 0.3" HorizontalAlignment="Left" Margin="722,407,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="Version 0.4" Margin="722,407,10,1" Foreground="White"/>
         <Button x:Name="StartButton" Content="Új Játék" HorizontalAlignment="Left" Margin="635,124,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" Height="43" Width="91" Click="StartButton_Click" Background="#FFDDDDDD">
             <Button.Effect>
                 <DropShadowEffect/>

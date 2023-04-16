@@ -5,8 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Loim"
         mc:Ignorable="d"
-        Title="Game" Height="450" Width="800">
-    <Grid>
-        
+        Title="Game" Height="512" Width="919" ResizeMode="CanMinimize" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid Margin="0,0,-19,-16">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF545454"/>
+                <GradientStop Color="#FF182B53" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Image HorizontalAlignment="Left" Height="127" Margin="10,10,0,0" VerticalAlignment="Top" Width="100" Source="/Vago.jpg"/>
+        <Image HorizontalAlignment="Center" Height="386" Margin="0,-2,0,0" VerticalAlignment="Top" Width="588" Source="/loim-logo.png"/>
+        <Image HorizontalAlignment="Left" Height="113" Margin="10,217,0,0" VerticalAlignment="Top" Width="115" Source="/digital-clock.png"/>
+        <Label x:Name="Timer" Content="0:0" HorizontalAlignment="Left" Margin="46,259,0,0" VerticalAlignment="Top" Foreground="White" Height="29" Width="43"/>
+        <Image x:Name="Halved" HorizontalAlignment="Left" Height="93" Margin="589,17,0,0" VerticalAlignment="Top" Width="119" Source="/felezo.png" Stretch="UniformToFill"/>
+        <Image x:Name="Phone" HorizontalAlignment="Left" Height="82" Margin="708,25,0,0" VerticalAlignment="Top" Width="99" Source="/tel.PNG" Stretch="UniformToFill"/>
+        <Image x:Name="Community" Height="80" Margin="813,0,25,405" VerticalAlignment="Bottom" Source="/kozonseg.PNG"/>
+        <Image HorizontalAlignment="Center" Height="182" Margin="0,274,0,0" VerticalAlignment="Top" Width="502" Source="/tag2.PNG"/>
+        <Button x:Name="QuestionButton" Content="Vágó István" HorizontalAlignment="Left" Margin="18,142,0,0" VerticalAlignment="Top" Height="41" Width="83" IsEnabled="False" Click="QuestionButton_Click"/>
+        <Button x:Name="StartButton" Content="Játék Kezdése" HorizontalAlignment="Left" Margin="401,461,0,16" Width="91" Click="StartButton_Click"/>
+        <Label x:Name="DeveloperLabel" Content="DeveloperLabel" HorizontalAlignment="Left" Margin="497,466,0,20" Foreground="White"/>
+        <Rectangle Margin="736,171,25,26" Stroke="Black" Fill="#FF0E4DE6"/>
+        <Label x:Name="Question" Content="Label" HorizontalAlignment="Center" Margin="0,316,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="Acaption" Content="Label" HorizontalAlignment="Left" Margin="332,365,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="Bcaption" Content="Label" HorizontalAlignment="Left" Margin="570,365,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="Ccaption" Content="Label" HorizontalAlignment="Left" Margin="332,407,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="Dcaption" Content="Label" HorizontalAlignment="Left" Margin="570,407,0,0" VerticalAlignment="Top" Foreground="White"/>
+
     </Grid>
 </Window>

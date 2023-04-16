@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="End.xaml.cs">
+      <DependentUpon>End.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Game.xaml.cs">
       <DependentUpon>Game.xaml</DependentUpon>
     </Compile>
@@ -65,6 +68,10 @@
     <Compile Include="User.xaml.cs">
       <DependentUpon>User.xaml</DependentUpon>
     </Compile>
+    <Page Include="End.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Game.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -127,6 +134,24 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="tablet-frame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Vago.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="digital-clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="felezo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="tel.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="kozonseg.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="tag2.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
