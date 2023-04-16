@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Media;
-using System.Security.Policy;
 using System.Windows;
-using System.Windows.Media;
 using System.Windows.Threading;
 
 namespace Loim
@@ -95,49 +93,25 @@ namespace Loim
             }
         }
 
-        /*
         private void Rounds()
         {
             switch (Round)
             {
                 case 1:
-
-                default:
+                    Round1.Fill = System.Windows.Media.Brushes.Orange;
                     break;
-            }
-
-
-
-            if (Round == 1)
-            {
-                panel1.BackColor = Color.Orange;
-                label1.BackColor = Color.Orange;
-                label12.BackColor = Color.Orange;
-            }
-            if (Round == 2)
-            {
-                panel13.BackColor = Color.Orange;
-                label2.BackColor = Color.Orange;
-                label15.BackColor = Color.Orange;
-            }
-            else if (Round == 3)
-            {
-                panel12.BackColor = Color.Orange;
-                label3.BackColor = Color.Orange;
-                label16.BackColor = Color.Orange;
-            }
-            else if (Round == 4)
-            {
-                panel11.BackColor = Color.Orange;
-                label4.BackColor = Color.Orange;
-                label17.BackColor = Color.Orange;
-            }
-            else if (Round == 5)
-            {
-                panel10.BackColor = Color.Orange;
-                label5.BackColor = Color.Orange;
-                label18.BackColor = Color.Orange;
-
+                case 2:
+                    Round2.Fill = System.Windows.Media.Brushes.Orange;
+                    break;
+                case 3:
+                    Round3.Fill = System.Windows.Media.Brushes.Orange;
+                    break;
+                case 4:
+                    Round4.Fill = System.Windows.Media.Brushes.Orange;
+                    break;
+                case 5:
+                    Round5.Fill = System.Windows.Media.Brushes.Orange;
+                    /*
                 richTextBox1.Visible = true;
                 pictureBox8.Visible = true;
                 richTextBox1.Text = "Gratulálok! Kilépőponthoz erkeztünk, ha kilépni kivánsz és el vinni a 100.000 Ft nyomd meg a  a bal alsó sarokban a kilép gombot. Ha viszont folytatni akarod akkor nyomd meg a folytatást!";
@@ -152,113 +126,87 @@ namespace Loim
                 Ccaption.Visible = false;
                 Dcaption.Visible = false;
                 timer1.Stop();
+                    */
 
-            }
-            else if (Round == 6)
-            {
-                ImOut.Visible = false;
-                Cont.Visible = false;
+                    break;
+                case 6:
+                    Round6.Fill = System.Windows.Media.Brushes.Orange;
+                    break;
+                case 7:
+                    Round7.Fill = System.Windows.Media.Brushes.Orange;
+                    break;
+                case 8:
+                    Round8.Fill = System.Windows.Media.Brushes.Orange;
+                    break;
+                case 9:
+                    Round9.Fill = System.Windows.Media.Brushes.Orange;
+                    break;
+                case 10:
+                    Round10.Fill = System.Windows.Media.Brushes.Orange;
 
-                panel9.BackColor = Color.Orange;
-                label6.BackColor = Color.Orange;
-                label19.BackColor = Color.Orange;
-            }
-            else if (Round == 7)
-            {
-                panel8.BackColor = Color.Orange;
-                label14.BackColor = Color.Orange;
-                label20.BackColor = Color.Orange;
-            }
-            else if (Round == 8)
-            {
-                panel7.BackColor = Color.Orange;
-                label7.BackColor = Color.Orange;
-                label21.BackColor = Color.Orange;
-            }
-            else if (Round == 9)
-            {
-                panel6.BackColor = Color.Orange;
-                label8.BackColor = Color.Orange;
-                label22.BackColor = Color.Orange;
-            }
-            else if (Round == 10)
-            {
-                panel5.BackColor = Color.Orange;
-                label9.BackColor = Color.Orange;
-                label23.BackColor = Color.Orange;
+                    /*
+                    richTextBox1.Visible = true;
+                    pictureBox8.Visible = true;
+                    richTextBox1.Text = "Gratulálok! Folytatod vagy elviszed a 1.500.000 Ft?";
+                    ImOut.Visible = true;
+                    Cont.Visible = true;
+                    tibi.Enabled = false;
 
+                    QuestionBox.Visible = false;
 
-                richTextBox1.Visible = true;
-                pictureBox8.Visible = true;
-                richTextBox1.Text = "Gratulálok! Folytatod vagy elviszed a 1.500.000 Ft?";
-                ImOut.Visible = true;
-                Cont.Visible = true;
-                tibi.Enabled = false;
+                    Acaption.Visible = false;
+                    Bcaption.Visible = false;
+                    Ccaption.Visible = false;
+                    Dcaption.Visible = false;
 
-                QuestionBox.Visible = false;
+                    timer1.Stop();
+                    */
 
-                Acaption.Visible = false;
-                Bcaption.Visible = false;
-                Ccaption.Visible = false;
-                Dcaption.Visible = false;
+                    break;
+                case 11:
+                    Round11.Fill = System.Windows.Media.Brushes.Orange;
+                    break;
+                case 12:
+                    Round12.Fill = System.Windows.Media.Brushes.Orange;
+                    break;
+                case 13:
+                    Round13.Fill = System.Windows.Media.Brushes.Orange;
+                    break;
+                case 14:
+                    Round14.Fill = System.Windows.Media.Brushes.Orange;
+                    break;
+                case 15:
+                    Round15.Fill = System.Windows.Media.Brushes.Orange;
 
-                timer1.Stop();
-            }
-            else if (Round == 11)
-            {
-                ImOut.Visible = false;
-                Cont.Visible = false;
-                panel4.BackColor = Color.Orange;
-                label10.BackColor = Color.Orange;
-                label24.BackColor = Color.Orange;
-            }
-            else if (Round == 12)
-            {
-                panel3.BackColor = Color.Orange;
-                label11.BackColor = Color.Orange;
-                label25.BackColor = Color.Orange;
-            }
-            else if (Round == 13)
-            {
-                panel15.BackColor = Color.Orange;
-                label13.BackColor = Color.Orange;
-                label26.BackColor = Color.Orange;
-            }
-            else if (Round == 14)
-            {
-                label30.BackColor = Color.Orange;
-                panel17.BackColor = Color.Orange;
-                label29.BackColor = Color.Orange;
-            }
-            else if (Round == 15)
-            {
-                panel16.BackColor = Color.Orange;
-                label28.BackColor = Color.Orange;
-                label27.BackColor = Color.Orange;
-                Win.Visible = true;
-                Win.Text = "Szép játék volt! Most már te is Milliomos vagy!";
+                    /*
+                    Win.Visible = true;
+                    Win.Text = "Szép játék volt! Most már te is Milliomos vagy!";
 
-                tibi.Enabled = false;
-                timer1.Stop();
+                    tibi.Enabled = false;
+                    timer1.Stop();
 
-                QuestionBox.Visible = false;
+                    QuestionBox.Visible = false;
 
-                Acaption.Visible = false;
-                Bcaption.Visible = false;
-                Ccaption.Visible = false;
-                Dcaption.Visible = false;
-                StreamWriter file = new StreamWriter("../../Resources/money.txt");
-                file.WriteLine("40.000.000 Ft");
+                    Acaption.Visible = false;
+                    Bcaption.Visible = false;
+                    Ccaption.Visible = false;
+                    Dcaption.Visible = false;
+                    StreamWriter file = new StreamWriter("../../Resources/money.txt");
+                    file.WriteLine("40.000.000 Ft");
 
-                file.Close();
+                    file.Close();
 
 
-                this.Hide();
-                f6.ShowDialog();
-                this.Close();
+                    this.Hide();
+                    f6.ShowDialog();
+                    this.Close();
+                    */
+
+                    break;
+                default:
+                    break;
             }
         }
-        */
 
         private void QuestionButton_Click(object sender, RoutedEventArgs e)
         {
@@ -277,10 +225,8 @@ namespace Loim
             Timer.Foreground = System.Windows.Media.Brushes.Gold;
             timer.Start();
 
-            /*
             Round++; //Kör 1-15
             Rounds();
-            */
 
             for (int i = 1; i <= 15; i++)
             {
@@ -305,6 +251,276 @@ namespace Loim
                 Phone.IsEnabled = true;
                 Community.IsEnabled = true;
             }
+        }
+
+        private void Acaption_Click(object sender, RoutedEventArgs e)
+        {
+            choice = 'A';
+
+            for (int i = 0; i <= 15; i++)
+            {
+                if (choice == list[select].Answer)
+                {
+                    Acaption.Background = System.Windows.Media.Brushes.LightGreen;
+                    Acaption.Foreground = System.Windows.Media.Brushes.Black;
+                    timer.Stop();
+                    soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_correct-answer.wav");
+                    soundplayer.Play();
+                    QuestionButton.IsEnabled = true;
+                    Acaption.IsEnabled = false;
+                    Bcaption.IsEnabled = false;
+                    Ccaption.IsEnabled = false;
+                    Dcaption.IsEnabled = false;
+                }
+                else
+                {
+                    Acaption.Background = System.Windows.Media.Brushes.Red;
+                    timer.Stop();
+                    soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_wrong-answer.wav");
+                    soundplayer.Play();
+                    QuestionButton.IsEnabled = true;
+                    Acaption.IsEnabled = false;
+                    Bcaption.IsEnabled = false;
+                    Ccaption.IsEnabled = false;
+                    Dcaption.IsEnabled = false;
+                    StreamWriter file = new StreamWriter("../../Resources/money.txt");
+                    file.WriteLine("0 Ft");
+                    file.Close();
+
+                    this.Hide();
+                    EndWindow.ShowDialog();
+                    this.Close();
+                    break;
+                }
+            }
+        }
+
+        private void Bcaption_Click(object sender, RoutedEventArgs e)
+        {
+            choice = 'B';
+
+            for (int i = 0; i <= 15; i++)
+            {
+                if (choice == list[select].Answer)
+                {
+                    Bcaption.Background = System.Windows.Media.Brushes.LightGreen;
+                    Bcaption.Foreground = System.Windows.Media.Brushes.Black;
+                    timer.Stop();
+                    soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_correct-answer.wav");
+                    soundplayer.Play();
+                    QuestionButton.IsEnabled = true;
+                    Acaption.IsEnabled = false;
+                    Bcaption.IsEnabled = false;
+                    Ccaption.IsEnabled = false;
+                    Dcaption.IsEnabled = false;
+                }
+                else
+                {
+                    Bcaption.Background = System.Windows.Media.Brushes.Red;
+                    timer.Stop();
+                    soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_wrong-answer.wav");
+                    soundplayer.Play();
+                    QuestionButton.IsEnabled = true;
+                    Acaption.IsEnabled = false;
+                    Bcaption.IsEnabled = false;
+                    Ccaption.IsEnabled = false;
+                    Dcaption.IsEnabled = false;
+                    StreamWriter file = new StreamWriter("../../Resources/money.txt");
+                    file.WriteLine("0 Ft");
+                    file.Close();
+
+                    this.Hide();
+                    EndWindow.ShowDialog();
+                    this.Close();
+                    break;
+                }
+            }
+        }
+
+        private void Ccaption_Click(object sender, RoutedEventArgs e)
+        {
+            choice = 'C';
+
+            for (int i = 0; i <= 15; i++)
+            {
+                if (choice == list[select].Answer)
+                {
+                    Ccaption.Background = System.Windows.Media.Brushes.LightGreen;
+                    Ccaption.Foreground = System.Windows.Media.Brushes.Black;
+                    timer.Stop();
+                    soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_correct-answer.wav");
+                    soundplayer.Play();
+                    QuestionButton.IsEnabled = true;
+                    Acaption.IsEnabled = false;
+                    Bcaption.IsEnabled = false;
+                    Ccaption.IsEnabled = false;
+                    Dcaption.IsEnabled = false;
+                }
+                else
+                {
+                    Ccaption.Background = System.Windows.Media.Brushes.Red;
+                    timer.Stop();
+                    soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_wrong-answer.wav");
+                    soundplayer.Play();
+                    QuestionButton.IsEnabled = true;
+                    Acaption.IsEnabled = false;
+                    Bcaption.IsEnabled = false;
+                    Ccaption.IsEnabled = false;
+                    Dcaption.IsEnabled = false;
+                    StreamWriter file = new StreamWriter("../../Resources/money.txt");
+                    file.WriteLine("0 Ft");
+                    file.Close();
+
+                    this.Hide();
+                    EndWindow.ShowDialog();
+                    this.Close();
+                    break;
+                }
+            }
+        }
+
+        private void Dcaption_Click(object sender, RoutedEventArgs e)
+        {
+            choice = 'D';
+
+            for (int i = 0; i <= 15; i++)
+            {
+                if (choice == list[select].Answer)
+                {
+                    Dcaption.Background = System.Windows.Media.Brushes.LightGreen;
+                    Dcaption.Foreground = System.Windows.Media.Brushes.Black;
+                    timer.Stop();
+                    soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_correct-answer.wav");
+                    soundplayer.Play();
+                    QuestionButton.IsEnabled = true;
+                    Acaption.IsEnabled = false;
+                    Bcaption.IsEnabled = false;
+                    Ccaption.IsEnabled = false;
+                    Dcaption.IsEnabled = false;
+                }
+                else
+                {
+                    Dcaption.Background = System.Windows.Media.Brushes.Red;
+                    timer.Stop();
+                    soundplayer = new SoundPlayer(@"../../Resources/Kvizjatek_wrong-answer.wav");
+                    soundplayer.Play();
+                    QuestionButton.IsEnabled = true;
+                    Acaption.IsEnabled = false;
+                    Bcaption.IsEnabled = false;
+                    Ccaption.IsEnabled = false;
+                    Dcaption.IsEnabled = false;
+                    StreamWriter file = new StreamWriter("../../Resources/money.txt");
+                    file.WriteLine("0 Ft");
+                    file.Close();
+
+                    this.Hide();
+                    EndWindow.ShowDialog();
+                    this.Close();
+                    break;
+                }
+            }
+        }
+
+        private void ImOut_Click(object sender, RoutedEventArgs e)
+        {
+            if (Round == 5)
+            {
+                StreamWriter file = new StreamWriter("../../Resources/money.txt");
+                file.WriteLine("100.000 Ft");
+                file.Close();
+            }
+            else if (Round == 10)
+            {
+                StreamWriter file = new StreamWriter("../../Resources/money.txt");
+                file.WriteLine("1.500.000 Ft");
+                file.Close();
+            }
+
+            this.Hide();
+            EndWindow.Show();
+            this.Close();
+        }
+
+        private void Cont_Click(object sender, RoutedEventArgs e)
+        {
+            QuestionButton.IsEnabled = true;
+            /*
+            pictureBox8.Visible = false;
+            richTextBox1.Visible = false;
+            */
+        }
+
+        private void Halved_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            mp += 10;
+
+            for (int i = 0; i <= 15; i++)
+            {
+                if ('A' != list[select].Answer && 'B' != list[select].Answer)
+                {
+                    Acaption.IsEnabled = false;
+                    Bcaption.IsEnabled = false;
+                }
+                else if ('C' != list[select].Answer && 'D' != list[select].Answer)
+                {
+                    Ccaption.IsEnabled = false;
+                    Dcaption.IsEnabled = false;
+                }
+            }
+
+            Halved.Visibility = Visibility;
+        }
+
+        private void Phone_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            mp += 10;
+            //richTextBox1.Visible = true;
+
+            int number = rnd.Next(1, 5);
+            string answer;
+
+            switch (number)
+            {
+                case 1:
+                    answer = "Szerintem az A a helyes válasz.";
+                    break;
+                case 2:
+                    answer = "Biztos vagyok abban hogy a B a helyes válasz.";
+                    break;
+                case 3:
+                    answer = "Az én véleményem szerint a C lehet a helyes válasz.";
+                    break;
+                case 4:
+                    answer = "Én a D-t választanám.";
+                    break;
+                default:
+                    answer = "Nem tudom erre a választ.";
+                    break;
+            }
+
+            Phone.Visibility = Visibility.Hidden;
+            //richTextBox1.Text = answer;
+        }
+
+        private void Community_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            /*
+            mp += 10;
+            Ask.Visible = true;
+            AskBack.Visible = true;
+            progressBar1.Visible = true;
+            progressBar2.Visible = true;
+            progressBar3.Visible = true;
+            progressBar4.Visible = true;
+            progressBar1.Visible = true;
+            Aska.Visible = true;
+            Askb.Visible = true;
+            Askc.Visible = true;
+            Askd.Visible = true;
+            AskBack.Visible = true;
+
+            Community.Visible = false;
+            */
         }
     }
 }

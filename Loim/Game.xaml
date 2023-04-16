@@ -17,19 +17,51 @@
         <Image HorizontalAlignment="Center" Height="386" Margin="0,-2,0,0" VerticalAlignment="Top" Width="588" Source="/loim-logo.png"/>
         <Image HorizontalAlignment="Left" Height="113" Margin="10,217,0,0" VerticalAlignment="Top" Width="115" Source="/digital-clock.png"/>
         <Label x:Name="Timer" Content="0:0" HorizontalAlignment="Left" Margin="46,259,0,0" VerticalAlignment="Top" Foreground="White" Height="29" Width="43"/>
-        <Image x:Name="Halved" HorizontalAlignment="Left" Height="93" Margin="589,17,0,0" VerticalAlignment="Top" Width="119" Source="/felezo.png" Stretch="UniformToFill"/>
-        <Image x:Name="Phone" HorizontalAlignment="Left" Height="82" Margin="708,25,0,0" VerticalAlignment="Top" Width="99" Source="/tel.PNG" Stretch="UniformToFill"/>
-        <Image x:Name="Community" Height="80" Margin="813,0,25,405" VerticalAlignment="Bottom" Source="/kozonseg.PNG"/>
+        <Image x:Name="Halved" HorizontalAlignment="Left" Height="93" Margin="589,17,0,0" VerticalAlignment="Top" Width="119" Source="/felezo.png" Stretch="UniformToFill" MouseLeftButtonDown="Halved_MouseLeftButtonDown"/>
+        <Image x:Name="Phone" HorizontalAlignment="Left" Height="82" Margin="708,25,0,0" VerticalAlignment="Top" Width="99" Source="/tel.PNG" Stretch="UniformToFill" MouseLeftButtonDown="Phone_MouseLeftButtonDown"/>
+        <Image x:Name="Community" Height="80" Margin="813,0,25,405" VerticalAlignment="Bottom" Source="/kozonseg.PNG" MouseLeftButtonDown="Community_MouseLeftButtonDown"/>
         <Image HorizontalAlignment="Center" Height="182" Margin="0,274,0,0" VerticalAlignment="Top" Width="502" Source="/tag2.PNG"/>
         <Button x:Name="QuestionButton" Content="Vágó István" HorizontalAlignment="Left" Margin="18,142,0,0" VerticalAlignment="Top" Height="41" Width="83" IsEnabled="False" Click="QuestionButton_Click"/>
         <Button x:Name="StartButton" Content="Játék Kezdése" HorizontalAlignment="Left" Margin="401,461,0,16" Width="91" Click="StartButton_Click"/>
         <Label x:Name="DeveloperLabel" Content="DeveloperLabel" HorizontalAlignment="Left" Margin="497,466,0,20" Foreground="White"/>
-        <Rectangle Margin="736,171,25,26" Stroke="Black" Fill="#FF0E4DE6"/>
-        <Label x:Name="Question" Content="Label" HorizontalAlignment="Center" Margin="0,316,0,0" VerticalAlignment="Top" Foreground="White"/>
-        <Label x:Name="Acaption" Content="Label" HorizontalAlignment="Left" Margin="332,365,0,0" VerticalAlignment="Top" Foreground="White"/>
-        <Label x:Name="Bcaption" Content="Label" HorizontalAlignment="Left" Margin="570,365,0,0" VerticalAlignment="Top" Foreground="White"/>
-        <Label x:Name="Ccaption" Content="Label" HorizontalAlignment="Left" Margin="332,407,0,0" VerticalAlignment="Top" Foreground="White"/>
-        <Label x:Name="Dcaption" Content="Label" HorizontalAlignment="Left" Margin="570,407,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Rectangle Margin="736,139,25,20" Stroke="Black" Fill="#FF0E4DE6"/>
+        <Label x:Name="Question" Content="Label" HorizontalAlignment="Center" Margin="0,311,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="1                                5.000 Ft" HorizontalAlignment="Left" Margin="743,461,0,0" VerticalAlignment="Top"/>
+        <Label Content="2                              10.000 Ft" HorizontalAlignment="Left" Margin="743,438,0,0" VerticalAlignment="Top"/>
+        <Label Content="3                              25.000 Ft" HorizontalAlignment="Left" Margin="743,415,0,0" VerticalAlignment="Top"/>
+        <Label Content="4                              50.000 Ft" HorizontalAlignment="Left" Margin="743,392,0,0" VerticalAlignment="Top"/>
+        <Label Content="5                            100.000 Ft" HorizontalAlignment="Left" Margin="743,369,0,0" VerticalAlignment="Top"/>
+        <Label Content="6                            200.000 Ft" HorizontalAlignment="Left" Margin="743,346,0,0" VerticalAlignment="Top"/>
+        <Label Content="7                            300.000 Ft" HorizontalAlignment="Left" Margin="743,323,0,0" VerticalAlignment="Top"/>
+        <Label Content="8                            500.000 Ft" HorizontalAlignment="Left" Margin="743,300,0,0" VerticalAlignment="Top"/>
+        <Label Content="9                            800.000 Ft" HorizontalAlignment="Left" Margin="743,277,0,0" VerticalAlignment="Top"/>
+        <Label Content="10                       1.500.000 Ft" HorizontalAlignment="Left" Margin="743,254,0,0" VerticalAlignment="Top"/>
+        <Label Content="11                       3.000.000 Ft" HorizontalAlignment="Left" Margin="743,231,0,0" VerticalAlignment="Top"/>
+        <Label Content="12                       5.000.000 Ft" HorizontalAlignment="Left" Margin="743,208,0,0" VerticalAlignment="Top"/>
+        <Label Content="13                     10.000.000 Ft" HorizontalAlignment="Left" Margin="743,185,0,0" VerticalAlignment="Top"/>
+        <Label Content="14                     20.000.000 Ft" HorizontalAlignment="Left" Margin="743,162,0,0" VerticalAlignment="Top"/>
+        <Label Content="15                     40.000.000 Ft" HorizontalAlignment="Left" Margin="743,139,0,0" VerticalAlignment="Top"/>
+        <Rectangle x:Name="Round1" HorizontalAlignment="Left" Height="19" Margin="743,465,0,0" Stroke="Black" VerticalAlignment="Top" Width="163"/>
+        <Rectangle x:Name="Round2" HorizontalAlignment="Left" Height="19" Margin="743,442,0,0" Stroke="Black" VerticalAlignment="Top" Width="163"/>
+        <Rectangle x:Name="Round3" HorizontalAlignment="Left" Height="19" Margin="743,419,0,0" Stroke="Black" VerticalAlignment="Top" Width="163"/>
+        <Rectangle x:Name="Round4" HorizontalAlignment="Left" Height="19" Margin="743,396,0,0" Stroke="Black" VerticalAlignment="Top" Width="163"/>
+        <Rectangle x:Name="Round5" HorizontalAlignment="Left" Height="19" Margin="743,373,0,0" Stroke="Black" VerticalAlignment="Top" Width="163"/>
+        <Rectangle x:Name="Round6" HorizontalAlignment="Left" Height="19" Margin="743,350,0,0" Stroke="Black" VerticalAlignment="Top" Width="163"/>
+        <Rectangle x:Name="Round7" HorizontalAlignment="Left" Height="19" Margin="743,327,0,0" Stroke="Black" VerticalAlignment="Top" Width="163"/>
+        <Rectangle x:Name="Round8" HorizontalAlignment="Left" Height="19" Margin="743,304,0,0" Stroke="Black" VerticalAlignment="Top" Width="163"/>
+        <Rectangle x:Name="Round9" HorizontalAlignment="Left" Height="19" Margin="743,281,0,0" Stroke="Black" VerticalAlignment="Top" Width="163"/>
+        <Rectangle x:Name="Round10" HorizontalAlignment="Left" Height="19" Margin="743,258,0,0" Stroke="Black" VerticalAlignment="Top" Width="163"/>
+        <Rectangle x:Name="Round11" HorizontalAlignment="Left" Height="19" Margin="743,234,0,0" Stroke="Black" VerticalAlignment="Top" Width="163"/>
+        <Rectangle x:Name="Round12" HorizontalAlignment="Left" Height="19" Margin="743,212,0,0" Stroke="Black" VerticalAlignment="Top" Width="163"/>
+        <Rectangle x:Name="Round13" HorizontalAlignment="Left" Height="19" Margin="743,189,0,0" Stroke="Black" VerticalAlignment="Top" Width="163"/>
+        <Rectangle x:Name="Round14" HorizontalAlignment="Left" Height="19" Margin="743,166,0,0" Stroke="Black" VerticalAlignment="Top" Width="163"/>
+        <Rectangle x:Name="Round15" HorizontalAlignment="Left" Height="19" Margin="743,143,0,0" Stroke="Black" VerticalAlignment="Top" Width="163"/>
+        <Button x:Name="Acaption" Content="Button" HorizontalAlignment="Left" Margin="293,369,0,0" VerticalAlignment="Top" Width="124" Background="{x:Null}" Foreground="White" Click="Acaption_Click"/>
+        <Button x:Name="Bcaption" Content="Button" HorizontalAlignment="Left" Margin="524,369,0,0" VerticalAlignment="Top" Width="124" Background="{x:Null}" Foreground="White" Click="Bcaption_Click"/>
+        <Button x:Name="Ccaption" Content="Button" HorizontalAlignment="Left" Margin="293,413,0,0" VerticalAlignment="Top" Width="124" Background="{x:Null}" Foreground="White" Click="Ccaption_Click"/>
+        <Button x:Name="Dcaption" Content="Button" HorizontalAlignment="Left" Margin="512,413,0,0" VerticalAlignment="Top" Width="124" Background="{x:Null}" Foreground="White" Click="Dcaption_Click"/>
+        <Button x:Name="ImOut" Content="Kiszállok!" HorizontalAlignment="Left" Margin="36,484,0,0" VerticalAlignment="Top" Click="ImOut_Click"/>
+        <Button x:Name="Cont" Content="Folytatom!" HorizontalAlignment="Left" Margin="101,484,0,0" VerticalAlignment="Top" Click="Cont_Click"/>
 
     </Grid>
 </Window>
