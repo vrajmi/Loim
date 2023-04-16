@@ -13,9 +13,21 @@
                 <GradientStop Color="#FF182B53" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Button x:Name="CloseButton" Content="Bezárás" HorizontalAlignment="Center" Margin="0,376,0,0" VerticalAlignment="Top" Height="37" Width="86" FontFamily="Showcard Gothic" Click="CloseButton_Click"/>
-        <Label Content="Készítette:" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" Height="53" Width="228" FontSize="36" Foreground="White"/>
-        <Label Content="Vodenicsár Rajmund" HorizontalAlignment="Center" Margin="0,68,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" Width="274" FontSize="24" Foreground="White"/>
+        <Button x:Name="CloseButton" Content="Bezárás" HorizontalAlignment="Center" Margin="0,361,0,0" Width="86" FontFamily="Showcard Gothic" Click="CloseButton_Click" Height="37" VerticalAlignment="Top">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Label Content="Készítette:" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" Height="53" Width="228" FontSize="36" Foreground="White">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Vodenicsár Rajmund" HorizontalAlignment="Center" Margin="0,68,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" Width="274" FontSize="24" Foreground="White">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
         <Image HorizontalAlignment="Left" Height="240" Margin="-108,131,0,0" VerticalAlignment="Top" Width="367" Source="/loim-logo.png" Stretch="UniformToFill"/>
         <Image HorizontalAlignment="Left" Height="177" Margin="223,168,0,0" VerticalAlignment="Top" Width="146" Source="/mathiasz_logo.png" Stretch="UniformToFill"/>
 
