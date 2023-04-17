@@ -13,7 +13,7 @@
                 <GradientStop Color="#FF182B53" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Button x:Name="CloseButton" Content="Bezárás" HorizontalAlignment="Center" Margin="0,361,0,0" Width="86" FontFamily="Showcard Gothic" Click="CloseButton_Click" Height="37" VerticalAlignment="Top">
+        <Button x:Name="CloseButton" Content="Bezárás" Margin="157,361,157,36" FontFamily="Showcard Gothic" Click="CloseButton_Click">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>

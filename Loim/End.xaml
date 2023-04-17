@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Loim"
         mc:Ignorable="d"
-        Title="End" Height="450" Width="800">
+        Title="Legyen Ön is milliomos!" Height="450" Width="800" ResizeMode="CanMinimize" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF545454"/>
+                <GradientStop Color="#FF182B53" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Image HorizontalAlignment="Center" Height="262" Margin="0,27,0,0" VerticalAlignment="Top" Width="386" Source="/tablet-frame.png"/>
+        <Button x:Name="MenuButton" Content="Főmenü" HorizontalAlignment="Center" Margin="0,359,0,0" VerticalAlignment="Top" Height="38" Width="90" Click="MenuButton_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Label Content="Név" HorizontalAlignment="Center" Margin="0,77,0,0" VerticalAlignment="Top" Height="46" Width="90" Foreground="White"/>
+        <Label Content="Ön" HorizontalAlignment="Left" Margin="380,157,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="Pénz" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+
     </Grid>
 </Window>
